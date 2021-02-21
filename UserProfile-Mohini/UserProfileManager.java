@@ -106,8 +106,8 @@ public class UserProfileManager {
        // assert(mgr.showUserDetails().size()==10);
        // assert(mgr.showUserDetails().get(0).getName().equals("Mohini"));
         
-        JFrame userProfileUI=new UserProfileUI(mgr);
-        userProfileUI.setVisible(true);
+      //  JFrame userProfileUI=new UserProfileUI(mgr);
+      //  userProfileUI.setVisible(true);
    
         
     }

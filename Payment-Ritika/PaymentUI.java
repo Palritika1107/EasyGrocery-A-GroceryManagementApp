@@ -13,14 +13,15 @@ import java.util.*;
 public class PaymentUI extends javax.swing.JFrame {
     
     private payMgr mgr;
-
+    private DisplayManager myMgr;
     /**
      * Creates new form PaymentUI
      */
-    public PaymentUI(payMgr mgr) {
-        this.mgr = mgr;
+    public PaymentUI(DisplayManager myMgr) {
+        //this.mgr = mgr;
+         this.myMgr=myMgr;       
         initComponents();
-        populateData(mgr.getDetails());
+        //populateData(mgr.getDetails());
     }
 
     /**
@@ -211,6 +212,7 @@ public class PaymentUI extends javax.swing.JFrame {
 //     }
                 
                 mgr.doHouseKeeping(mgr);
+               myMgr.exit();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private Payment populateData(ArrayList<Payment> ob)
@@ -254,7 +256,7 @@ public class PaymentUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new PaymentUI(new payMgr()).setVisible(true);
+                //new PaymentUI(new payMgr()).setVisible(true);
             }
         });
     }

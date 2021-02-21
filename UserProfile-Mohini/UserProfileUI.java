@@ -1,6 +1,5 @@
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,15 +15,17 @@ import java.util.logging.Logger;
  * @author SANJAY GUPTA
  */
 public class UserProfileUI extends javax.swing.JFrame {
-        private final UserProfileManager mgr;
+        //private final UserProfileManager mgr;
+        private final DisplayManager myMgr;
     /**
      * Creates new form Profile_MohiniGupta_219
      * @param mgr
      */
-    public UserProfileUI(UserProfileManager mgr) {
-        this.mgr=mgr;
+    public UserProfileUI(DisplayManager myMgr) {
+        //this.mgr=mgr;
+        this.myMgr=myMgr;
         initComponents();
-        populateData(mgr.showUserDetails());
+       // populateData(mgr.showUserDetails());
     }
 
     /**
@@ -64,6 +65,7 @@ public class UserProfileUI extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jLabel14 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         jToggleButton1.setText("jToggleButton1");
 
@@ -233,6 +235,15 @@ public class UserProfileUI extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(51, 204, 0));
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton2.setText("PROCEED TO PAY");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -257,7 +268,8 @@ public class UserProfileUI extends javax.swing.JFrame {
                         .addComponent(jLabel7)
                         .addGap(81, 81, 81))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(272, 272, 272)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(142, 142, 142)
                         .addComponent(jButton1)
                         .addGap(24, 55, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -285,7 +297,9 @@ public class UserProfileUI extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -345,14 +359,16 @@ public class UserProfileUI extends javax.swing.JFrame {
             this.jLabel13.setText("Empty field!!!");
          if(this.jTextArea1.getText().equals(""))
             this.jLabel14.setText("Empty field!!!");
+            // mgr.addUserDetails(new User(this.jTextField1.getText(),this.jTextField2.getText(),this.jPasswordField1.getPassword().toString(),this.jTextArea1.getText(),Integer.parseInt(this.jTextField3.getText())));
          
-            try {
-                mgr.addUserDetails(new User(this.jTextField1.getText(),this.jTextField2.getText(),this.jPasswordField1.getPassword().toString(),this.jTextArea1.getText(),Integer.parseInt(this.jTextField3.getText())));
-            } catch (IOException ex) {
-                Logger.getLogger(UserProfileUI.class.getName()).log(Level.SEVERE, null, ex);
-            }
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        System.out.println("payment");
+        myMgr.showpaymentUI();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -387,13 +403,14 @@ public class UserProfileUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new UserProfileUI(new UserProfileManager()).setVisible(true);
+              //  new UserProfileUI(new UserProfileManager()).setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;

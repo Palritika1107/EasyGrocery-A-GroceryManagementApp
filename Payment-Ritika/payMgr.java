@@ -220,8 +220,8 @@ public class payMgr {
          mgr.doHouseKeeping(mgr);
          
          //CREATE SCREENS
-         JFrame PaymentUI = new PaymentUI(mgr);
-         PaymentUI.setVisible(true);
+        // JFrame PaymentUI = new PaymentUI(mgr);
+        // PaymentUI.setVisible(true);
        
            //UNIT TESTING
           assert(mgr.getDetails().size() == 5);

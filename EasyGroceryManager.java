@@ -6,15 +6,15 @@
 
 /**
  *
- * @author ritika
+ * @author SANJAY GUPTA
  */
-public class DisplayManager {
-    
-    private PaymentUI payUI;
-    
-    public static void main(String[] args)
-    {
-        Display
+public class EasyGroceryManager {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
     }
     
 }
