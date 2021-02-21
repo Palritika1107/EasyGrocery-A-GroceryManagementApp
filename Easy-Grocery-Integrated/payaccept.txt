@@ -1,0 +1,6 @@
+Date|ModeOfPayment|cardNos|cvv|CardHolder'sName|PaymentStatus
+1/1/2021|CashOnDelivery|0|0|Anjali Singh|Order Accepted
+2/1/2021|Debit|234-456-789|456|John Doe|Order Accepted
+3/1/2021|Debit|678-255-999|789|Raj Sharma|Order Accepted
+4/1/201|Credit|908-789-654|134|Amy Fowler|Order Accepted
+5/1/2021|CashOnDelivery|0|0|Ritika Pal|Order Accepted
