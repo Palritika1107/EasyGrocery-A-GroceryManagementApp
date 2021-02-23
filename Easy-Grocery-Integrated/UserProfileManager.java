@@ -75,7 +75,7 @@ public class UserProfileManager {
     public boolean addUserDetails(User newUser) throws IOException{
         boolean result= false;
         this.userList.add(newUser);
-        //System.out.println(userList);
+        System.out.println(userList);
         try (FileWriter writer = new FileWriter("src/user.csv")) {  
             BufferedWriter bw = new BufferedWriter(writer);
             //bw.newLine();

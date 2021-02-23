@@ -11,7 +11,7 @@
 public class DisplayManager {
      private PaymentUI paymentUI;
      private UserProfileUI userprofileUI;
-    private EasyGroceryManager mainMgr;
+     private EasyGroceryManager mainMgr;
     
     public  payMgr getPayMgr()
     {

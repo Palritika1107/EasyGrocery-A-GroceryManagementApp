@@ -1,5 +1,6 @@
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -335,7 +336,7 @@ public class UserProfileUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField3ActionPerformed
     private void populateData(List<User> users){
         User myuser=users.get(0);
-        System.out.println(myuser.getName());
+        //System.out.println(myuser.getName());
         this.jTextField2.setText(myuser.getEmail());
         this.jPasswordField1.setText(myuser.getPassword());
     }
@@ -360,7 +361,12 @@ public class UserProfileUI extends javax.swing.JFrame {
             this.jLabel13.setText("Empty field!!!");
          if(this.jTextArea1.getText().equals(""))
             this.jLabel14.setText("Empty field!!!");
-            // mgr.addUserDetails(new User(this.jTextField1.getText(),this.jTextField2.getText(),this.jPasswordField1.getPassword().toString(),this.jTextArea1.getText(),Integer.parseInt(this.jTextField3.getText())));
+         
+            try {
+                mgr.addUserDetails(new User(this.jTextField1.getText(),this.jTextField2.getText(),this.jPasswordField1.getPassword().toString(),this.jTextArea1.getText(),Integer.parseInt(this.jTextField3.getText())));
+            } catch (IOException ex) {
+                Logger.getLogger(UserProfileUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
          
         
     }//GEN-LAST:event_jButton1ActionPerformed
