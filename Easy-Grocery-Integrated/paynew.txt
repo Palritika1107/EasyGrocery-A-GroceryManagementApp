@@ -1,6 +1,0 @@
-Date|ModeOfPayment|cardNos|cvv|CardHolder'sName
-1/1/2021|CashOnDelivery|0|0|Anjali Singh
-2/1/2021|Debit|234-456-789|456|John Doe
-3/1/2021|Debit|678-25-9|789|Raj Sharma
-4/1/201|Credit|908-789-654|134|Amy Fowler
-5/1/2021|CashOnDelivery|0|0|Ritika Pal
