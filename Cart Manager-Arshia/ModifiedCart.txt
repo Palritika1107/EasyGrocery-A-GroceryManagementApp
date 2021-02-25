@@ -1,4 +1,0 @@
-User Id, User name, Total
-U1,Sheldon Cooper,1200.0
-U4,Leonard Hofstatder,418.0
-U5,Chandler Bing,265.0
