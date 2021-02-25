@@ -36,7 +36,7 @@ public class UserProfileManager {
         
         try {
             // constructor may throw FileNotFoundException
-            reader = new FileReader("src/user.csv");
+            reader = new FileReader("user.csv");
             bufReader = new BufferedReader(reader);
             
            // bufReader.readLine();

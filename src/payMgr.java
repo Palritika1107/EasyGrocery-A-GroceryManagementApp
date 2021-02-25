@@ -26,7 +26,7 @@ public class payMgr {
         //READING FILE
         try{
 
-       FileReader reader = new FileReader("src/paynew.txt");
+       FileReader reader = new FileReader("paynew.txt");
        
        BufferedReader bufReader = new BufferedReader(reader);
 //       tokenizeThings(bufReader);
@@ -62,7 +62,7 @@ public class payMgr {
          ArrayList<Payment> ob = mgr.getDetails();
          
          try{
-             String file = "src/payaccept.txt";
+             String file = "payaccept.txt";
             FileWriter writer = new FileWriter(file);  
             BufferedWriter bw = new BufferedWriter(writer);
             bw.write("Date|ModeOfPayment|cardNos|cvv|CardHolder'sName|PaymentStatus");

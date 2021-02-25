@@ -37,7 +37,7 @@ public class EasyGroceryManager {
      }
      public boolean init()
      {
-         profileOb.init("src/user.csv");
+         profileOb.init("user.csv");
          cartOb.init();
          payOb.init();
          productOb.init();

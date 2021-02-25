@@ -40,7 +40,7 @@ public class CartManager {
         //READING FILE
         try{
 
-       FileReader reader = new FileReader("src/CartData.txt");
+       FileReader reader = new FileReader("CartData.txt");
        
        BufferedReader bufReader = new BufferedReader(reader);
 //       tokenizeThings(bufReader);
@@ -153,7 +153,7 @@ public class CartManager {
          //CartUI ui =new CartUI(mgr);
          
          try{
-             String file = "src/ModifiedCart.txt";
+             String file = "ModifiedCart.txt";
             FileWriter writer = new FileWriter(file);  
             BufferedWriter bw = new BufferedWriter(writer);
             bw.write("User Id, User name, Total");

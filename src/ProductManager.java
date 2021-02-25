@@ -80,7 +80,7 @@ public class ProductManager {
         FileReader reader = null;
         BufferedReader bufReader = null;
         try{
-             reader = new FileReader("src\\Product.csv");
+             reader = new FileReader("Product.csv");
             bufReader = new BufferedReader(reader);
 
             bufReader.readLine();
@@ -128,7 +128,7 @@ public class ProductManager {
     {
         boolean result=false;
         this.ProductList.add(newProduct);
-        try (FileWriter writer = new FileWriter("src\\Product.csv")) {  
+        try (FileWriter writer = new FileWriter("Product.csv")) {  
             BufferedWriter bw = new BufferedWriter(writer);
             //bw.newLine();
             
