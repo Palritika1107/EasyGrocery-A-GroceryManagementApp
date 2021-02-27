@@ -12,16 +12,15 @@
 import java.io.*;
 import java.util.StringTokenizer; 
 import java.util.*;
-import javax.swing.JFrame;
 
 public class CartManager {
     ArrayList<Cart>myCart ;
-    private EasyGroceryManager mainMgr;
+    private final EasyGroceryManager mainMgr;
     
     CartManager(EasyGroceryManager mainMgr)
     {
         this.mainMgr=mainMgr;
-        this.myCart = new ArrayList<Cart>();
+        this.myCart = new ArrayList<>();
         
     }
     

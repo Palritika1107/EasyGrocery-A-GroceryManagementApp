@@ -9,15 +9,17 @@
  * @author 206_Arshia Chaudhuri
  */
 import java.util.*;
+
 public class CartUI extends javax.swing.JFrame {
 
     /**
      * Creates new form CartUI
      */
-     private CartManager mgr;
+    private CartManager mgr;
     private final DisplayManager myMgr;
+
     public CartUI(DisplayManager myMgr) {
-        this.myMgr=myMgr;
+        this.myMgr = myMgr;
         initComponents();
         mgr = myMgr.getCartMgr();
         populateData(mgr.getDetails());
@@ -37,7 +39,6 @@ public class CartUI extends javax.swing.JFrame {
 
         jLabel11 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -58,6 +59,7 @@ public class CartUI extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -71,11 +73,9 @@ public class CartUI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 102));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pic1.jpeg"))); // NOI18N
-
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel2.setText("Easy Groceries");
+        jLabel2.setText("Easy Grocery");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel3.setText("User ID:");
@@ -122,27 +122,27 @@ public class CartUI extends javax.swing.JFrame {
         jLabel16.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel16.setText("jLabel16");
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cart-icon-28356.png"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cart-icon-28356.png")));
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(0, 102, 102));
         jLabel17.setText("Your Cart");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/s1.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel15)
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel15)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(160, 160, 160)
@@ -191,14 +191,14 @@ public class CartUI extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel17)
                     .addComponent(jLabel15))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -304,57 +304,57 @@ public class CartUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         System.out.println("payment");
         myMgr.showpaymentUI();
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        String p1=this.jTextField4.getText();
-        String p2=this.jTextField5.getText();
-        int q1=(Integer)this.jSpinner1.getValue();
-        int q2=(Integer)this.jSpinner2.getValue();
-        String uid=mgr.myCart.get(0).getuId();
-        String t1=mgr.calcTotal(uid, p1, Integer.toString(q1));
-        String t2=mgr.calcTotal(uid, p2, Integer.toString(q2));
-        double t=Double.parseDouble(t1)+Double.parseDouble(t2);
-        this.jTextPane1.setText(Double.toString(t));
-        this.jPanel3.setVisible(true);
-        mgr.myCart.get(0).setTotal(Double.toString(t));
-        
-        //mgr.doHouseKeeping(mgr);
-
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:        
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void populateData(ArrayList<Cart> ob)
-    {
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String p1 = this.jTextField4.getText();
+        String p2 = this.jTextField5.getText();
+        int q1 = (Integer) this.jSpinner1.getValue();
+        int q2 = (Integer) this.jSpinner2.getValue();
+        String uid = mgr.myCart.get(0).getuId();
+        String t1 = mgr.calcTotal(uid, p1, Integer.toString(q1));
+        String t2 = mgr.calcTotal(uid, p2, Integer.toString(q2));
+        double t = Double.parseDouble(t1) + Double.parseDouble(t2);
+        this.jTextPane1.setText(Double.toString(t));
+        this.jPanel3.setVisible(true);
+        mgr.myCart.get(0).setTotal(Double.toString(t));
+
+        //mgr.doHouseKeeping(mgr);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void populateData(ArrayList<Cart> ob) {
         Cart myCart = ob.get(0);
         this.jLabel14.setText(myCart.getuId());
         this.jLabel16.setText(myCart.getUname());
         this.jTextField3.setText(myCart.getiName());
         this.jTextField4.setText(myCart.getPrice());
         this.jSpinner1.setValue(Integer.valueOf(myCart.getQty()));
-        myCart=ob.get(1);
-        
+        myCart = ob.get(1);
+
         this.jTextField6.setText(myCart.getiName());
         this.jTextField5.setText(myCart.getPrice());
         this.jSpinner2.setValue(Integer.valueOf(myCart.getQty()));
         //return myCart;
-        
+
     }
-    public String userTotal(){
+
+    public String userTotal() {
         return this.jTextPane1.getText();
     }
+
     /**
      * @param args the command line arguments
      */
@@ -389,7 +389,7 @@ public class CartUI extends javax.swing.JFrame {
 //                CartUI ui=new CartUI(new CartManager());
 //                ui.setVisible(true);
 //                ui.jPanel3.setVisible(false);
-                
+
             }
         });
     }
@@ -403,7 +403,7 @@ public class CartUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
+    public javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;

@@ -90,6 +90,8 @@ public class UserProfileUI extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 102));
 
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/s1.jpeg"))); // NOI18N
+
         jLabel4.setBackground(new java.awt.Color(255, 0, 0));
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 0, 0));

@@ -83,7 +83,7 @@ public class PaymentUI extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Ubuntu", 1, 15)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(245, 23, 6));
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/s1.jpeg"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/s1.jpeg"))); // NOI18N
         jLabel7.setText("Easy Grocery");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
