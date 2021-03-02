@@ -1,0 +1,70 @@
+ID,Name,Group,PricePerUnit,UnitOfMesurement,Company
+1,Onion,Vegetables,60,kg,Amazon
+2,Potato,Vegetables,24,kg,Big Basket
+3,Carrot,Vegetables,35,kg,Amazon
+4,Beetroot,Vegetables,50,kg,Grofer
+5,Garlic,Vegetables,250,kg,Amazon
+6,Cabbage,Vegetables,40,kg,Amazon
+7,Bottle Gourd,Vegetables,50,kg,Big Basket
+8,Cucumber,Vegetables,60,kg,Big Basket
+9,Tomato,Vegetables,42,kg,Big Basket
+10,Corn,Vegetables,10,piece,Big Basket
+11,Onion,Vegetables,65,kg,Big Basket
+12,Potato,Vegetables,26,kg,Amazon
+13,Carrot,Vegetables,32,kg,Grofer
+14,Beetroot,Vegetables,78,kg,Amazon
+15,Garlic,Vegetables,95,kg,Grofer
+16,Cabbage,Vegetables,65,kg,Big Basket
+17,Bottle Gourd,Vegetables,45,kg,Grofer
+18,Cucumber,Vegetables,52,kg,Amazon
+19,Tomato,Vegetables,51,kg,Amazon
+20,Apple,Fruit,43,kg,Amazon
+21,Watermelon,Fruit,50,kg,Amazon
+22,Orange,Fruit,50,kg,Spencer's
+23,Strawberry,Fruit,250,kg,Grofer
+24,Grape,Fruit,95,kg,Grofer
+25,Cherry,Fruit,80,kg,Grofer
+26,Mango,Fruit,60,kg,Grofer
+27,Banana,Fruit,40,dozen,Grofer
+28,Necterine,Fruit,65,kg,Amazon
+29,Pomegranate,Fruit,82,kg,Spencer's
+30,Papaya,Fruit,50,kg,Amazon
+31,Grape,Fruit,65,kg,Spencer's
+32,Strawberry,Fruit,80,kg,Spencer's
+33,Orange,Fruit,15,Piece,Amazon
+34,Watermelon,Fruit,50,kg,Grofer
+35,Apple,Fruit,60,kg,Spencer's
+36,Cashew,Dry Fruit,900,kg,Grofer
+37,Almonds,Dry Fruit,750,kg,Spencer's
+38,Pistachio,Dry Fruit,1100,kg,Amazon
+39,Walnut,Dry Fruit,1500,kg,Spencer's
+40,Almonds,Dry Fruit,850,kg,Amazon
+41,Raisin,Dry Fruit,450,kg,Flipkart
+42,Basmati Rice,Grains,80,kg,Flipkart
+43,Brown Rice,Grains,100,kg,Flipkart
+44,Moong dal,Grains,60,kg,Spencer's
+45,Chana Dal,Grains,70,kg,Spencer's
+46,Pea,Grains,80,kg,Amazon
+47,Masoor Dal,Grains,90,kg,Spencer's
+48,Aatta,Grains,100,kg,Amazon
+49,Soyabean,Grains,120,kg,Flipkart
+50,Pea ,Grains,50,kg,Flipkart
+51,Oats,Grains,50,kg,Amazon
+52,Basmati Rice,Grains,60,kg,Amazon
+53,Bread,Grains,60,Packet,Spencer's
+54,Aatta,Grains,100,kg,Spencer's
+55,Cheese,Dairy,250,kg,Flipkart
+56,Butter,Dairy,500,kg,Amazon
+57,Milk,Dairy,60,Litre,Grofer
+58,Curd,Dairy,400,kg,Spencer's
+59,Cake,Dairy,600,Piece,Spencer's
+60,Yogurt,Dairy,500,kg,Flipkart
+61,Ghee,Dairy,1000,kg,Amazon
+62,Egg,Protein,7,Piece,Amazon
+63,Horlicks,Protein,550,Kg,Amazon
+64,Peanut Butter,Protein,500,kg,Flipkart
+65,Protinex,Protein,400,kg,Grofer
+66,Parle G,Snacks,10,packet,Grofer
+67,Haldiram bhujia,Snacks,500,kg,Flipkart
+68,Lays,Snacks,10,packet,Grofer
+69,Haldiram bhujia,Snacks,500,kg,Amazon
