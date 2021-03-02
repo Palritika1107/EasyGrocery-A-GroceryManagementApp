@@ -388,7 +388,7 @@
                   <Properties>
                     <Property name="columns" type="int" value="20"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="IEM KOLKATA&#xa;SaltLake,WestBengal&#xa;India"/>
+                    <Property name="text" type="java.lang.String" value="IEM KOLKATA,SaltLake"/>
                   </Properties>
                 </Component>
               </SubComponents>

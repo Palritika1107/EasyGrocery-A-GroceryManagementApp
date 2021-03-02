@@ -6,7 +6,7 @@
 
 /**
  *
- * @author SANJAY GUPTA
+ * @author MOHINI GUPTA
  */
 public class EasyGroceryManager {
      private DisplayManager displayOb;
