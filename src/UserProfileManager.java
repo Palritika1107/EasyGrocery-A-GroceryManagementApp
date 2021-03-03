@@ -77,7 +77,7 @@ public class UserProfileManager {
         boolean result= false;
         this.userList.add(newUser);
         System.out.println(userList);
-        try (FileWriter writer = new FileWriter("src/user.csv")) {  
+        try (FileWriter writer = new FileWriter("user.csv")) {  
             BufferedWriter bw = new BufferedWriter(writer);
             //bw.newLine();
             
