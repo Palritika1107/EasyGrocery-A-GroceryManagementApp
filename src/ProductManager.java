@@ -5,7 +5,7 @@ import java.util.List;
 import javax.swing.JFrame;
 import java.util.Iterator;
 import java.util.StringTokenizer;
- import javax.swing.*;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -18,7 +18,7 @@ import java.util.StringTokenizer;
  */
 public class ProductManager {
     private ArrayList<Product> ProductList;
-    public static ProductManager instance;
+    //public static ProductManager instance;
     EasyGroceryManager mainMgr;
     
     
@@ -27,26 +27,17 @@ public class ProductManager {
         this.ProductList=new ArrayList<Product>();
         //this.init();
     }
-    public static ProductManager getInstanceOfProductManager()
+    public ArrayList<Product> Search1(String x)
     {
-        EasyGroceryManager mainMgr=new EasyGroceryManager();
-        if(instance==null)
-        {
-            instance=new ProductManager(mainMgr);
-        }
-        return instance;
-    }
-   
-    public boolean search(DefaultListModel<String> df,String x)
-    {
-        
-        int flag=0;
+        ArrayList<Product> result=new ArrayList<Product>();
         if(x.equals(""))
         {
             for(int i=0;i<ProductList.size();i++)
             {
                 Product p=ProductList.get(i);
-                df.add(df.size(), p.getID()+","+p.getName()+","+p.getGroup()+","+p.getPrice()+","+p.getUnitOfMeasurement());
+                result.add(p);
+                
+                
                 
             }
         }
@@ -57,21 +48,28 @@ public class ProductManager {
             if(x.equals(ProductList.get(i).getName()))
             {
                 Product p=ProductList.get(i);
-                df.add(df.size(), p.getID()+","+p.getName()+","+p.getGroup()+","+p.getPrice()+","+p.getUnitOfMeasurement());
-                return true;
+                result.add(p);
+                
+                
             }
-            
-            else if(x.equals(ProductList.get(i).getGroup()))
+        }}
+        
+        return result;
+        
+    }
+     public ArrayList<Product> Search2(String x)
+    {
+        ArrayList<Product> result=new ArrayList<Product>();
+         for(int i=0;i<ProductList.size();i++)
+         {
+             if(x.equals(ProductList.get(i).getGroup()))
                     {
                         Product p=ProductList.get(i);
-                        df.add(df.size(), p.getID()+","+p.getName()+","+p.getGroup()+","+p.getPrice()+","+p.getUnitOfMeasurement());
-                        flag=1;
+                        result.add(p);
+                        
                     }
-        }}
-        if(flag==0)
-            return false;
-        else
-            return true;
+         }
+         return result;
     }
     
     public boolean init()
@@ -87,7 +85,7 @@ public class ProductManager {
             String oneLine = bufReader.readLine();
                         while(oneLine != null){
                 //reader.read() may throw IOException
-                System.out.println(oneLine);
+                //System.out.println(oneLine);
                 StringTokenizer st = new StringTokenizer(oneLine, ",");
                 ArrayList<String> arrayl = new ArrayList<>();
                 while (st.hasMoreTokens()) {
@@ -95,7 +93,7 @@ public class ProductManager {
                     arrayl.add(st.nextToken());              
                 }
                 System.out.println(arrayl);
-                this.ProductList.add(new Product(Integer.parseInt(arrayl.get(0)),arrayl.get(1),arrayl.get(2),Integer.parseInt(arrayl.get(3)),arrayl.get(1)));
+                this.ProductList.add(new Product(Integer.parseInt(arrayl.get(0)),arrayl.get(1),arrayl.get(2),Integer.parseInt(arrayl.get(3)),arrayl.get(4),arrayl.get(5)));
                 // System.out.println(this.userList);
                 oneLine = bufReader.readLine();
                 
@@ -155,6 +153,26 @@ public class ProductManager {
     public boolean doHousekeeping(){
         return true;
     }
+     public String SearchPrice(int ID)
+     {
+         int Price;
+                 String s="0";
+         for(int i=0;i<ProductList.size();i++)
+        {
+            
+            if(ID==ProductList.get(i).getID())
+            {
+                Product p=ProductList.get(i);
+                //s[j]=p.getID()+","+p.getName()+","+p.getGroup()+","+p.getPrice()+","+p.getUnitOfMeasurement();
+                
+                Price= p.getPrice();
+                 s=Integer.toString(Price);
+                break;
+            }
+         
+        }
+         return s;
+     }   
     //public static void main(String args[]) {
      //  ProductManager mgr=new ProductManager();
      //   mgr.init();

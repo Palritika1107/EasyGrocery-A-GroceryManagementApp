@@ -14,14 +14,16 @@ public class Product {
     private String Group;
     private int Price;
     private String UnitOfMeasurement;
+    private String Company;
     
-    public Product(int ID,String Name,String Group,int Price,String UnitOfMeasurement)
+    public Product(int ID,String Name,String Group,int Price,String UnitOfMeasurement,String Company)
     {
         this.ID = ID;
         this.Name = Name;
         this.Group = Group;
         this.Price = Price;
         this.UnitOfMeasurement = UnitOfMeasurement;
+        this.Company = Company;
     }
     public int getID()
     {
@@ -63,13 +65,20 @@ public class Product {
     {
         this.UnitOfMeasurement=UnitOfMeasurement;
     }
+     public String getCompany()
+    {
+        return Company;
+    }
+    public void setCompany(String Company)
+    {
+        this.Company=Company;
+    }
     public String toString()
     {
-        return ("ID: "+this.getID()+
-                ", Name: "+this.getName()+
-                ", Group: "+this.getGroup()+
-                ", Price: "+this.getPrice()+
-                ", UnitOfMeasurement: "+this.getUnitOfMeasurement());
+        return ("ID "+this.getID()+" - "
+                +this.getName()+"("+
+                this.getGroup()+") : Rs "+
+                this.getPrice()+" Company: "+this.getCompany());
     }
     public String save(){
         String s=ID+","+Name+","+Group+","+Price+","+UnitOfMeasurement;
