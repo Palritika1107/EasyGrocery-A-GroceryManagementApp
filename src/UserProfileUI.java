@@ -147,7 +147,7 @@ public class UserProfileUI extends javax.swing.JFrame {
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("IEM KOLKATA,SaltLake");
+        jTextArea1.setText("IEM KOLKATA");
         jScrollPane1.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
