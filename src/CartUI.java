@@ -330,9 +330,12 @@ public class CartUI extends javax.swing.JFrame {
         mgr.myCart.get(0).setTotal(Double.toString(t));
         }
         if(t==0 && Double.parseDouble(t1)>=0 && Double.parseDouble(t2)>=0 ){
-            this.jButton1.setText("Your Cart is Empty");
-            mgr.myCart.get(0).setTotal(Double.toString(t));
-            this.jPanel3.setVisible(false);
+            JOptionPane.showMessageDialog(this, "Your Cart is Empty");
+            mgr.myCart.get(0).setTotal(Double.toString(t));            
+        }
+        if(Double.parseDouble(t1)<0 || Double.parseDouble(t2)<0 ){
+            JOptionPane.showMessageDialog(this, "Negative value in Qty Not Allowed");
+        }
         }
 
         //mgr.doHouseKeeping(mgr);
