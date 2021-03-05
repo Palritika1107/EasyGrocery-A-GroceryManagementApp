@@ -348,8 +348,7 @@ public class UserProfileUI extends javax.swing.JFrame {
         }
         if(this.jTextField2.getText().equals(""))
             this.jLabel11.setText("Empty field!!!");
-        if(this.jTextField3.getText().length()>0 )
-            this.jLabel12.setText("Incorrect details");
+  
         if(this.jTextField3.getText().equals(""))
             this.jLabel12.setText("Empty field!!!");
         if(this.jPasswordField1.getPassword().length<6)

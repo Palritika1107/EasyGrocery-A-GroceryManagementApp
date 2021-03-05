@@ -6,7 +6,7 @@
 
 /**
  *
- * @author Ritika,Moihini
+ * @author Ritika,Mohini
  */
 public class DisplayManager {
      private PaymentUI paymentUI;
